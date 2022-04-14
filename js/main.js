@@ -86,9 +86,6 @@ function creat() {
     var images = ["url(/image/car-pink.png)", "url(/image/car-blue.png)", "url(/image/car-yellow.webp)", "url(/image/car-orange.png)"];
     var imgCount = images.length;
     var randomCount = (Math.floor((Math.random() * imgCount)));
-    console.log(randomCount);
-
-
     rivalCar.style.backgroundImage = images[randomCount];
 
     gameArea.appendChild(rivalCar);
@@ -256,7 +253,6 @@ function gameOver() {
   startBtn.style.backgroundColor = 'rgb(28, 86, 67)';
 
   startBtn.innerHTML = `Your score : ${carPlayer.score} <br> Your coin : ${carPlayer.coinScore} <br> Click here to Restart`;
-
 }
 
 
