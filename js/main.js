@@ -44,7 +44,8 @@ function start() {
   window.requestAnimationFrame(runCars);
   // window.setInterval(runCars, 1000 / 60)
 
-  carGame.style.backgroundImage = "url(/image/background.jpg)";
+  carGame.style.backgroundImage = "url('https://t4.ftcdn.net/jpg/02/41/90/67/360_F_241906786_oqzl8pUTbroCqUHkQRBk6oCVo66v0J8f.jpg')";
+  // carGame.style.backgroundImage = "url(/image/background.jpg)";
 
   creat()
 
@@ -83,7 +84,14 @@ function creat() {
     let rivalCar = document.createElement('div');
     rivalCar.setAttribute('class', 'rivalCars');
 
-    var images = ["url(/image/car-pink.png)", "url(/image/car-blue.png)", "url(/image/car-yellow.webp)", "url(/image/car-orange.png)"];
+    // var images = ["url(/image/car-pink.png)", "url(/image/car-blue.png)", "url(/image/car-yellow.webp)", "url(/image/car-orange.png)"];
+
+    var images = [
+      "url('https://cdn.pixabay.com/photo/2013/07/12/11/58/car-145009_1280.png')",
+      "url('https://user-images.githubusercontent.com/73326725/103851027-c4319180-50ce-11eb-9e7f-97d9f49477b3.png')",
+      "url('https://mv-motors-83.com/wp-content/uploads/2020/11/rrrr-1.png')",
+      "url('https://user-images.githubusercontent.com/73326725/103851022-c267ce00-50ce-11eb-8768-e2087994f8bb.png')"];
+
     var imgCount = images.length;
     var randomCount = (Math.floor((Math.random() * imgCount)));
     rivalCar.style.backgroundImage = images[randomCount];
@@ -248,7 +256,8 @@ function endGame() {
 function gameOver() {
   endGame()
 
-  carGame.style.backgroundImage = "url(/image/gameover.png)";
+  carGame.style.backgroundImage = "url('https://community.gamedev.tv/uploads/db2322/original/3X/d/7/d7f31b2eeeb447f06a715afa20e512feb5114a7c.png')";
+  // carGame.style.backgroundImage = "url(/image/gameover.png)";
   startBtn.style.marginTop = '72vh';
   startBtn.style.backgroundColor = 'rgb(28, 86, 67)';
 
@@ -260,7 +269,8 @@ function gameOver() {
 function win() {
   endGame()
 
-  carGame.style.backgroundImage = "url(/image/youwin.jpg)";
+  carGame.style.backgroundImage = "url('https://t4.ftcdn.net/jpg/03/59/88/53/360_F_359885319_Poc8GIIxb4fuTXKkfnRxCkdi3xqzhlJx.jpg')";
+  // carGame.style.backgroundImage = "url(/image/youwin.jpg)";
   startBtn.style.marginTop = '68vh';
   startBtn.style.backgroundColor = '#b5120c';
 
