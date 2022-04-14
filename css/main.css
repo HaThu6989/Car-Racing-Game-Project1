@@ -23,7 +23,9 @@
 
 .rivalCars {
   left: 200px;
-  background-image: url(../image/car-yellow1.webp);
+  /* background-image: url(../image/car-yellow1.webp); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .roadLine {
