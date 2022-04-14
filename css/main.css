@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.car,
+.rivalCars {
+  width: 50px;
+  height: 80px;
+  position: absolute;
+  bottom: 120px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.car {
+  background-image: url(../image/car-red.webp);
+}
+
+.rivalCars {
+  left: 200px;
+  background-image: url(../image/car-yellow1.webp);
+}
+
+.roadLine {
+  width: 10px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  margin-left: 245px;
+}
+
+.coin {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 120px;
+  left: 200px;
+  background-image: url(../image/coin.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.gameArea {
+  width: 500px;
+  height: 100vh;
+  background-color: #434c54;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-right: dashed #c8d6e5;
+  border-left: dashed #c8d6e5;
+}
+
+.startBtn {
+  background: #b5120c;
+  width: 40%;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  line-height: 45px;
+  position: absolute;
+  justify-content: center;
+  margin-top: 25vh;
+  margin-left: 60vh;
+  padding: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px #777;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1vh;
+  word-spacing: 1.5vh;
+  border-radius: 2vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.score,
+.gameLevel,
+.coinBoard {
+  position: absolute;
+  width: 250px;
+  padding: 20px;
+  background: #b5120c;
+  left: 50px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 5px 5px #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5vh;
+  word-spacing: 1vh;
+  border-radius: 2vh;
+}
+
+.score {
+  position: absolute;
+  width: 250px;
+  padding: 20px;
+  background: #b5120c;
+  top: 50px;
+  left: 50px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 5px 5px #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5vh;
+  word-spacing: 1vh;
+  border-radius: 2vh;
+}
+
+.gameLevel {
+  top: 200px;
+}
+
+.coinBoard {
+  top: 350px;
+}
+
+
+.carGame {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
